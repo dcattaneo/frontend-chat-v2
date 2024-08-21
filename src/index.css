@@ -1,0 +1,16 @@
+@import url('https://fonts.cdnfonts.com/css/adventure-time-logo');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/bg-adventure.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+
+}
