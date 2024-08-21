@@ -29,6 +29,7 @@ export function Login() {
         <form onSubmit={handleSubmit} className="px-2">
           <div className="py-2">
             <input
+              id="email"
               type="email"
               value={inputs.email}
               onChange={(e) => setInputs({ ...inputs, email: e.target.value })}
@@ -40,6 +41,7 @@ export function Login() {
 
           <div className="py-2">
             <input
+              id="password"
               type="password"
               value={inputs.password}
               onChange={(e) =>
@@ -63,7 +65,7 @@ export function Login() {
                                     px-6 py-3 my-8 mx-auto flex items-center justify-center w-20 h-12"
               disabled={loading}
             >
-              {loading ?  <AiOutlineLoading3Quarters className="animate-spin" /> : "Login"}
+              {loading ? <AiOutlineLoading3Quarters className="animate-spin" /> : "Login"}
             </button>
           </div>
         </form>

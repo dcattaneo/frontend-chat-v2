@@ -30,6 +30,7 @@ export function Register() {
         <form onSubmit={handleSubmit} className="px-2">
           <div className="py-2">
             <input
+              id="username"
               type="text"
               placeholder="Username"
               value={inputs.username}
@@ -43,6 +44,7 @@ export function Register() {
 
           <div className="py-2">
             <input
+              id="email"
               type="email"
               placeholder="E-mail"
               value={inputs.email}
@@ -53,6 +55,7 @@ export function Register() {
 
           <div className="py-2">
             <input
+              id="password"
               type="password"
               placeholder="Password"
               value={inputs.password}
