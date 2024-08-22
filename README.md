@@ -10,4 +10,4 @@
 
 `npm install` Install deps
 
-`npm run dev` Run app# frontend-chat-v2
+`npm run dev` Run app
