@@ -23,14 +23,14 @@ export function Messages() {
 
         <>
           <div className="flex flex-col  justify-center items-center">
-            <div className="flex  flex-col w-52 gap-4 pb-10 opacity-20">
+            <div className="flex  flex-col w-40 gap-4 pb-10 opacity-20">
               <div className="skeleton h-32 w-full "></div>
               <div className="skeleton h-4 w-28"></div>
               <div className="skeleton h-4 w-full"></div>
               <div className="skeleton h-4 w-full"></div>
             </div>
 
-            <div className="flex  flex-col w-52 gap-4 opacity-20 justify-end items-end">
+            <div className="flex  flex-col w-40 gap-4 opacity-20 justify-end items-end">
               <div className="skeleton h-32 w-full"></div>
               <div className="skeleton h-4 w-28"></div>
               <div className="skeleton h-4 w-full"></div>
