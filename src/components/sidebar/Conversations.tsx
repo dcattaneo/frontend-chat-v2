@@ -8,7 +8,7 @@ export function Conversations() {
   // console.log("conversations:", conversations);
 
   return (
-    <div className=" flex flex-col w-full  ">
+    <div className="flex flex-col">
       {conversations?.map((conversation, index) => {
         return (
 

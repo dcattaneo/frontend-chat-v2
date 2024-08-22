@@ -18,6 +18,9 @@ export function Conversation(
   const [getPic, setGetPic] = useState("");
   // const { onlineUsers } = useSocketContext();
   // const isOnline = onlineUsers?.includes(conversation._id)  //VER SI NO CAMBIE EL ID
+  const shortenedAlias = conversation.username!.length >= 7 ? conversation.username?.slice(0, 6) : conversation.username
+
+
 
   useEffect(() => {
     function getRandomPic() {
@@ -30,7 +33,7 @@ export function Conversation(
   return (
     <>
       <div
-        className={`flex w-full h-full gap-2    hover:bg-yellow-600  rounded p-3 py-1 cursor-pointer ${isSelected ? "bg-yellow-600" : ""
+        className={`flex h-full gap-2    hover:bg-yellow-600  rounded p-1 py-1 cursor-pointer ${isSelected ? "bg-yellow-600" : ""
           }`}
         onClick={() => setSelectedConversation(conversation)}
       >
@@ -43,7 +46,10 @@ export function Conversation(
 
         <div className="w-full">
           <div className="flex  gap-2 w-full justify-between items-center  ">
-            <p className=" text-gray-500 sm:flex hidden justify-normal sm:text-xs md:text-sm">
+            <p className="flex sm:hidden text-gray-500  text-xs justify-normal  md:text-sm">
+              {shortenedAlias}
+            </p>
+            <p className="hidden sm:flex text-gray-500  text-xs justify-normal  md:text-sm">
               {conversation.username}
             </p>
             <img
@@ -55,7 +61,7 @@ export function Conversation(
         </div>
       </div >
       {/* divider */}
-      {!lastIndex && <div className="border-b-2  border-slate-300  opacity-40 "></div>}
+      {!lastIndex && <div className="border-b-2  border-slate-300  opacity-30 "></div>}
     </>
   );
 }
