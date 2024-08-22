@@ -17,7 +17,7 @@ export function Conversation(
   const isSelected = selectedConversation?._id === conversation._id;
   const [getPic, setGetPic] = useState("");
   // const { onlineUsers } = useSocketContext();
-  // const isOnline = onlineUsers?.includes(conversation._id)  //VER SI NO CAMBIE EL ID
+  // const isOnline = onlineUsers?.includes(conversation._id) 
   const shortenedAlias = conversation.username!.length >= 7 ? conversation.username?.slice(0, 6) : conversation.username
 
 
