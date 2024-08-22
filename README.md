@@ -1,4 +1,4 @@
-# frontend-chat-v1
+# frontend-chat-v2
 
 ### How to run app
 
