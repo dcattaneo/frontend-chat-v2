@@ -1,5 +1,9 @@
 # frontend-chat-v2
 
+## Project Summary
+
+The frontend of the application was developed using React and TypeScript for stronger typing and early error detection. 
+
 ### How to run app
 
 `npm i -g vercel`: Install vercel CLI
