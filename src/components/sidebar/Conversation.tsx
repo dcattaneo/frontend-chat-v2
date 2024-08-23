@@ -2,7 +2,7 @@ import { UserData } from "./../../types";
 import { getRandomCharacters } from "../../utils/emojis";
 import { useConversation } from "./../../store/useConversation";
 import { useEffect, useState } from "react";
-// import { useSocketContext } from "../../context/SocketContext";
+
 
 type ConversationProps = {
   conversation: UserData,
@@ -16,8 +16,6 @@ export function Conversation(
   const { selectedConversation, setSelectedConversation } = useConversation();
   const isSelected = selectedConversation?._id === conversation._id;
   const [getPic, setGetPic] = useState("");
-  // const { onlineUsers } = useSocketContext();
-  // const isOnline = onlineUsers?.includes(conversation._id) 
   const shortenedAlias = conversation.username!.length >= 7 ? conversation.username?.slice(0, 6) : conversation.username
 
 
@@ -37,7 +35,7 @@ export function Conversation(
           }`}
         onClick={() => setSelectedConversation(conversation)}
       >
-        {/* <div className={`avatar ${isOnline? "online" : ""}  flex justify-center`}> */}
+
         <div className={`avatar online   flex justify-center`}>
           <div className=" w-6 h-6 sm:w-7 sm:h-7 rounded-full">
             <img src={conversation.profilePic} alt="user avatar" />

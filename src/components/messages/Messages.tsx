@@ -2,11 +2,10 @@ import { useEffect, useRef } from 'react'
 import { Message } from "./index";
 import { useGetMessages } from "../../hooks/useGetMessages";
 import love from '/love.png'
-// import { useListenMessages } from '../../hooks/useListenMessages';
+
 
 export function Messages() {
   const { loading, messages } = useGetMessages();
-  // useListenMessages()
   const lastMessageRef = useRef<null | HTMLDivElement>(null);
 
   useEffect(() => {
