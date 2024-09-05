@@ -1,15 +1,14 @@
 import { Home, Login, Register } from "./pages/index.ts";
 import { Routes, Route, Navigate } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
-import {useAuth} from "./context/AuthContext.tsx"
+import { useAuth } from "./context/AuthContext.tsx"
 
 
 function App() {
   const { user } = useAuth();
-  // console.log(user);
 
   return (
-    <div className=" flex justify-center items-center p-4 h-screen">
+    <div className="flex justify-center items-center p-4 h-screen">
       <Routes>
         <Route
           path="/"

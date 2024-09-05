@@ -1,4 +1,4 @@
-import { Socket } from 'socket.io-client'
+// import { Socket } from 'socket.io-client'
 
 export type RegisterInputs = {
   username: string;
@@ -12,13 +12,13 @@ export type LoginInputs = {
 };
 
 export type UserData = {
-  username?: string;
-  email?: string;
+  username: string;
+  email: string;
   id: string;
-  _id: string;  //ver por qué estoy utilizando 2 _id's: en el backend es id
-  profilePic?: string;
-  createdAt?: Date;
-  updatedAt?: Date;
+  _id: string;
+  profilePic: string;
+  createdAt: Date;
+  updatedAt: Date;
 };
 
 export type ProviderProps = {
@@ -34,16 +34,16 @@ export type AuthProviderHookProps = {
   loading?: boolean;
 };
 
-export type SocketHookProps = {
-  socket?: Socket;
-  onlineUsers?: Socket[]
-};
+// export type SocketHookProps = {
+//   socket?: Socket;
+//   onlineUsers?: Socket[]
+// };
 
 export type Messages = {
-  _id?: number;
-  senderId?: number;
-  receiverId?: number;
-  message?: string;
+  _id: string;
+  senderId: string;
+  receiverId: string;
+  message: string;
   createdAt: Date;
   updatedAt: Date;
 };
